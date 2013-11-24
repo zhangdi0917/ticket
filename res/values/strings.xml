@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">罚单</string>
+    <string name="drawer_menu_nearby">附近罚单</string>
+    <string name="drawer_menu_my">我的罚单</string>
+    <string name="drawer_menu_share">告诉好友</string>
+    <string name="drawer_menu_setting">设置</string>
+    <string name="action_add">新建</string>
+
+</resources>
