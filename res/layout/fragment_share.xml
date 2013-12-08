@@ -8,6 +8,112 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/drawer_menu_share" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/share_friend_label"
+        android:textColor="@color/text_hint_color"
+        android:textSize="@dimen/section_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/section_divider_bg" />
+
+    <TextView
+        android:id="@+id/share_sms_tv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/item_bg"
+        android:drawablePadding="30dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/share_sms_label"
+        android:textSize="@dimen/share_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/share_divider_bg" />
+
+    <TextView
+        android:id="@+id/share_weibo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/item_bg"
+        android:drawablePadding="30dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/share_weibo_label"
+        android:textSize="@dimen/share_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/share_divider_bg" />
+
+    <TextView
+        android:id="@+id/share_wechat_tv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/item_bg"
+        android:drawablePadding="30dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/share_wechat_label"
+        android:textSize="@dimen/share_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/share_divider_bg" />
+
+    <TextView
+        android:id="@+id/share_pyq_tv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/item_bg"
+        android:drawablePadding="30dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/share_pyq_label"
+        android:textSize="@dimen/share_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/share_divider_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/list_holo_bg"
+        android:gravity="bottom"
+        android:text="@string/share_hint"
+        android:textColor="@color/text_hint_color"
+        android:textSize="@dimen/section_text_size" />
 
 </LinearLayout>

@@ -1,9 +1,7 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    android:layout_height="match_parent" >
 
     <FrameLayout
         android:id="@+id/fragment_main"
@@ -16,78 +14,41 @@
         android:layout_width="@dimen/drawer_menu_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@drawable/drawer_menu_bg" >
+        android:background="@drawable/drawer_menu_bg"
+        android:clickable="true" >
+
+        <ListView
+            android:id="@+id/menu_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/drawer_divider"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="true"
+            android:scrollbars="none" >
+        </ListView>
 
         <TextView
-            android:id="@+id/menu_nearby_tv"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@drawable/list_holo_bg"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="15dp"
-            android:text="@string/drawer_menu_nearby"
-            android:textSize="20sp" />
-
-        <View
-            android:id="@+id/menu_line1"
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_below="@id/menu_nearby_tv"
-            android:background="@color/drawer_divider_bg" />
+            android:id="@+id/feedback_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/menu_feedback_label"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/menu_my_ticket_tv"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_below="@id/menu_line1"
-            android:background="@drawable/list_holo_bg"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="15dp"
-            android:text="@string/drawer_menu_my"
-            android:textSize="20sp" />
-
-        <View
-            android:id="@+id/menu_line2"
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_below="@id/menu_my_ticket_tv"
-            android:background="@color/drawer_divider_bg" />
-
-        <TextView
-            android:id="@+id/menu_share_tv"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_below="@id/menu_line2"
-            android:background="@drawable/list_holo_bg"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="15dp"
-            android:text="@string/drawer_menu_share"
-            android:textSize="20sp" />
-
-        <View
-            android:id="@+id/menu_line3"
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_below="@id/menu_share_tv"
-            android:background="@color/drawer_divider_bg" />
-
-        <TextView
-            android:id="@+id/menu_setting_tv"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_below="@id/menu_line3"
-            android:background="@drawable/list_holo_bg"
-            android:gravity="left|center_vertical"
-            android:paddingLeft="15dp"
-            android:text="@string/drawer_menu_setting"
-            android:textSize="20sp" />
-
-        <View
-            android:id="@+id/menu_line4"
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_below="@id/menu_setting_tv"
-            android:background="@color/drawer_divider_bg" />
+            android:id="@+id/producer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/feedback_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="@string/menu_producer_lable"
+            android:textColor="@color/text_hint_color"
+            android:textSize="12sp" />
     </RelativeLayout>
 
 </android.support.v4.widget.DrawerLayout>

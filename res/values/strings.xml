@@ -6,6 +6,39 @@
     <string name="drawer_menu_my">我的罚单</string>
     <string name="drawer_menu_share">告诉好友</string>
     <string name="drawer_menu_setting">设置</string>
+    <string name="menu_feedback_label">建议&amp;反馈</string>
+    <string name="menu_producer_lable">张哲嘉出品\n@2014</string>
     <string name="action_add">新建</string>
+    <string name="share_friend_label">请选择你想告诉好友的方式</string>
+    <string name="share_sms_label">发送短信告诉好友</string>
+    <string name="share_weibo_label">发送微博告诉好友</string>
+    <string name="share_wechat_label">发送微信给好友</string>
+    <string name="share_pyq_label">发送到微信朋友圈</string>
+    <string name="share_hint">从不吃罚单的你\n告诉好友们这个app吧，大家好才是真的好</string>
+
+    <!-- weibo -->
+    <string name="authrize_weibo_failed">微博绑定失败，请稍后重试</string>
+    <string name="authrize_weibo_success">微博绑定成功</string>
+    <string name="cancel_download_weibo">取消下载</string>
+    <string name="weibo_not_support_api_hint">微博客户端不支持 SDK分享或微博客户端未安装或微博客户端是非官方版本。</string>
+    <string name="weibo_share_success">分享成功</string>
+    <string name="weibo_share_failed">分享失败</string>
+    <string name="weibo_share_canceled">取消分享</string>
+
+    <!-- wechat -->
+    <string name="wechat_not_support_timeline">微信版本不支持分享到朋友圈</string>
+
+    <!-- setting -->
+    <string name="setting_weibo_account_hint">微博账号将作为你的唯一登录凭证</string>
+    <string name="setting_protocol_label">使用协议</string>
+    <string name="logout_weibo_dialog_msg">确定解除绑定微博吗？</string>
+    <string name="logout_weibo_dialog_positive">确定</string>
+    <string name="logout_weibo_dialog_negative">取消</string>
+    <string name="setting_weibo_bind_top_label">当前已绑定微博账号</string>
+    <string name="setting_weibo_unbind_top_label">当前未绑定微博</string>
+    <string name="setting_weibo_unbind_bottom_label">马上绑定</string>
+    
+    <!-- protocol -->
+	<string name="protocol_actionbar_title">使用协议</string>
 
 </resources>

@@ -5,5 +5,11 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     
     <dimen name="drawer_menu_width">250dp</dimen>
+    
+    <dimen name="section_text_size">12sp</dimen>
+    <dimen name="share_text_size">18sp</dimen>
+    
+    <dimen name="setting_weibo_text_size">16sp</dimen>
+    <dimen name="setting_weibo_hint_size">13sp</dimen>
 
 </resources>

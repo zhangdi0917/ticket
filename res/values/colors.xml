@@ -1,6 +1,28 @@
 <resources>
 
+    <!-- base color -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray1">#AAAAAA</color>
+    <color name="gray2">#999999</color>
+    <color name="gray3">#BBBBBB</color>
+    <color name="gray4">#333333</color>
+    <color name="gray5">#666666</color>
+    <color name="gray6">#F2F2F2</color>
+    <color name="gray7">#DEDEDE</color>
+    <color name="gray8">#c3c3c1</color>
+    
     <drawable name="transparent">#00000000</drawable>
     <drawable name="drawer_menu_bg">#ffffff</drawable>
-    <color name="drawer_divider_bg">#cccccc</color>
+    <color name="drawer_divider">#cccccc</color>
+    
+    <drawable name="item_bg_pressed">#e3e3e3</drawable>
+    
+    <drawable name="section_divider_bg">#888888</drawable>
+    <drawable name="share_divider_bg">#cccccc</drawable>
+    
+    <color name="text_color">#000000</color>
+    <color name="text_hint_color">#666666</color>
+    
+    <drawable name="weibo_avatar_empty">#ced0d1</drawable>
 </resources>

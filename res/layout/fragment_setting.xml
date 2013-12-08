@@ -1,13 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@null"
-    android:orientation="vertical" >
+    android:background="@null" >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/weibo_hint"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/drawer_menu_setting" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/setting_weibo_account_hint"
+        android:textColor="@color/text_hint_color"
+        android:textSize="@dimen/setting_weibo_hint_size" />
 
-</LinearLayout>
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/weibo_hint"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/share_divider_bg" />
+
+    <RelativeLayout
+        android:id="@+id/weibo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/divider_1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:id="@+id/weibo_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/weibo_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/weibo_avatar"
+            android:duplicateParentState="true"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/setting_weibo_text_size" />
+
+        <TextView
+            android:id="@+id/weibo_bottom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/weibo_avatar"
+            android:duplicateParentState="true"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/setting_weibo_text_size" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/weibo_layout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/share_divider_bg" />
+
+    <View
+        android:id="@+id/divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/divider_2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/share_divider_bg" />
+
+    <TextView
+        android:id="@+id/protocol_tv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/divider_3"
+        android:background="@drawable/item_bg"
+        android:drawablePadding="30dp"
+        android:drawableRight="@drawable/ic_arrow"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/setting_protocol_label"
+        android:textSize="@dimen/share_text_size" />
+
+    <View
+        android:id="@+id/divider_4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/protocol_tv"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/share_divider_bg" />
+
+</RelativeLayout>
